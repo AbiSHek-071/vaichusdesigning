@@ -1,0 +1,378 @@
+@font-face{
+    font-family: primary;
+    src:url(./font/RedHatDisplay-Bold.ttf);
+}
+@font-face{
+    font-family: outfit-light;
+    src: url(./font/Outfit-Light.ttf);
+}
+@font-face{
+    font-family: outfit-reg;
+    src: url(./font/Outfit-Regular.ttf);
+}
+:root{
+    --clr-primary:#1c3a47;
+    --clr-secondry:#27aae1;
+    --clr-black:#000000;
+    --clr-white:#ffffff;
+}
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+
+}
+body{
+    background-color: var(--clr-white);
+}
+
+.home nav{
+    max-height: 6vw;
+    width: 97%;
+    margin-inline: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+}
+.home nav :first-child{   
+    margin-right: auto;  
+}
+
+
+.home nav a{
+    text-decoration: none;
+    color: var(--clr-black);
+    font-family: outfit-reg;
+    font-size:clamp(2px, 2vw, 17px);
+    margin-right: 2vw;
+    transition-duration: .5s
+}
+.home nav a:hover{
+    color: rgb(94, 90, 90);
+}
+
+.home nav button{
+    color: var(--clr-white);
+    font-family: outfit-reg;
+    background-color: var(--clr-secondry);
+    width: 12vw;
+    height: 4vw;
+    max-width: 135px;
+    max-height: 39px;
+    border-radius: .3vw;
+    border: none;
+    cursor: pointer;
+    font-size:clamp(3px, 1.5vw, 17px);
+}
+.home nav button:hover{
+    background-color: #42baee;
+}
+.logo{
+    width: 12vw;
+  
+    cursor: pointer;
+    
+}
+.img_cont{
+    width: 100%;
+   
+}
+.img_cont img{
+    width: 100%;
+    object-fit: contain;
+}
+
+
+
+.main-button {
+
+    width: 3.2vw;
+    height: 3.2vw;
+    background: url('./icon/arrow-right.png');
+    background-size: cover;
+    position: fixed;
+    bottom: 6vw;
+    right: 6vw;
+    background-color: white;
+    border: none;
+    border-radius: 50%;
+    /* padding: 15px; */
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+
+  }
+
+  .dropdown {
+    
+    position: fixed;
+    bottom: 10vw;
+    right: 5.3vw;
+    display: flex;
+    flex-direction: column;
+    visibility: hidden;
+    transform: translateY(20px);
+    transition: transform 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  }
+
+  .dropdown-button {
+    width: 3.2vw;
+    height: 3.2vw;
+    
+    border: none;
+    border-radius: 8px;
+    padding: .8vw;
+    margin: .8vw;
+    cursor: pointer;
+    opacity: 0;
+    transform: translateY(1vw);
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  }
+  .dbtn3{
+    background: url('./icon/email.png');
+    background-size: cover;
+  }
+  .dbtn2{
+    background: url('./icon/whatsapp.png');
+    background-size: cover;
+  }
+  .dbtn1{
+    background: url('./icon/telephone.png');
+    background-size: cover;
+  }
+
+  .main-button.active + .dropdown {
+    visibility: visible;
+    transform: translateY(0);
+  }
+
+  .dropdown-button:nth-child(1) {
+    transition-delay: 0.3s;
+  }
+
+  .dropdown-button:nth-child(2) {
+    transition-delay: 0.2s;
+  }
+
+  .dropdown-button:nth-child(3) {
+    transition-delay: 0.1s;
+  }
+
+  .main-button:not(.active) + .dropdown {
+    visibility: hidden;
+    transform: translateY(20px);
+    transition-delay: 0.3s; /* Delay to ensure a smooth transition */
+  }
+
+  .main-button.active + .dropdown .dropdown-button {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .main-button.active{
+    /* transform: rotate(180deg); */
+    background: url('./icon/remove.png');
+    width: 3.2vw;
+    height: 3.2vw;
+    background-size: cover;
+    background-color: white;
+  }
+  .main-button {
+  
+      width: 3.2vw;
+      height: 3.2vw;
+      background: url('./icon/arrow-right.png');
+      background-size: cover;
+      position: fixed;
+      bottom: 6vw;
+      right: 6vw;
+      background-color: white;
+      border: none;
+      border-radius: 50%;
+      /* padding: 15px; */
+      cursor: pointer;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  
+    }
+  
+    .dropdown {
+      
+      position: fixed;
+      bottom: 10vw;
+      right: 5.3vw;
+      display: flex;
+      flex-direction: column;
+      visibility: hidden;
+      transform: translateY(20px);
+      transition: transform 0.3s ease-in-out, visibility 0.3s ease-in-out;
+    }
+  
+    .dropdown-button {
+      width: 3.2vw;
+      height: 3.2vw;
+      
+      border: none;
+      border-radius: 8px;
+      padding: .8vw;
+      margin: .8vw;
+      cursor: pointer;
+      opacity: 0;
+      transform: translateY(1vw);
+      transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    }
+    .dbtn3{
+      background: url('./icon/email.png');
+      background-size: cover;
+    }
+    .dbtn2{
+      background: url('./icon/whatsapp.png');
+      background-size: cover;
+    }
+    .dbtn1{
+      background: url('./icon/telephone.png');
+      background-size: cover;
+    }
+  
+    .main-button.active + .dropdown {
+      visibility: visible;
+      transform: translateY(0);
+    }
+  
+    .dropdown-button:nth-child(1) {
+      transition-delay: 0.3s;
+    }
+  
+    .dropdown-button:nth-child(2) {
+      transition-delay: 0.2s;
+    }
+  
+    .dropdown-button:nth-child(3) {
+      transition-delay: 0.1s;
+    }
+  
+    .main-button:not(.active) + .dropdown {
+      visibility: hidden;
+      transform: translateY(20px);
+      transition-delay: 0.3s; /* Delay to ensure a smooth transition */
+    }
+  
+    .main-button.active + .dropdown .dropdown-button {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .main-button.active{
+      /* transform: rotate(180deg); */
+      background: url('./icon/remove.png');
+      width: 3.2vw;
+      height: 3.2vw;
+      background-size: cover;
+      background-color: white;
+    }
+
+
+footer{
+    
+    background-color:var(--clr-primary);
+    color: var(--clr-white);
+    
+
+}
+.footer{
+
+ 
+    width: 80%;
+    padding-top: 2vw;
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.about{
+    width: 35%;
+}
+.contact h3{
+    font-family: primary;
+    color: var(--clr-white);
+    font-size: clamp(5px,2.5vw,26px);
+}
+.contact span{
+    font-family: primary;
+    color: var(--clr-white);
+    font-size: clamp(5px,2.5vw,26px);
+}
+.about span{
+    font-family: outfit-reg;
+    font-size: clamp(2px,2vw,17px);
+    color: var(--clr-white);
+}
+.about h3{
+    font-family: primary;
+    color: var(--clr-white);
+    font-size: clamp(2px,5vw,26px);
+}
+.icons{
+    display: flex;
+    gap: .3vw;
+    margin-top: .4vw;
+
+    }
+    .icons img{
+        cursor: pointer;
+        width: 3vw;
+        height: 3vw;
+        color: white;
+        transition-duration: .3s;
+    }
+    .icons img:hover{
+        scale: 1.1;
+    }
+footer hr{
+    width: 80%;
+    margin-inline: auto;
+    margin-top: 5vw;
+}
+.co-rts{
+
+    width: 80%;
+    margin-inline: auto;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    font-size: clamp(2px,2vw,17px);
+    margin-top:1vw ;
+    margin-bottom: 1vw;
+}
+
+.co-rts img{
+    width: 12vw;
+    margin-top:1vw ;
+    margin-bottom: 1vw;
+    cursor: pointer;
+}
+
+
+@media (max-width:600px){
+    .main-button{
+        width: 10vw;
+        height: 10vw;
+        cursor: none;
+        bottom: 13vw;
+        right: 15vw;
+    }
+    .dropdown-button{
+        width: 10vw;
+        height: 10vw;
+        cursor: none;
+    }
+    .dropdown {
+        bottom: 25vw;
+      
+        right: 14vw;
+    }
+    .main-button.active{
+        
+        width: 10vw;
+        height: 10vw;
+    
+      }
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logo designing</title>
+    <link rel="icon" href="./logo/v blue.png" type="image/png" sizes="16x16">
+    <link rel="stylesheet" href="logostyle.css">
+    <link rel="stylesheet" href="mobile.css">
+</head>
+<body>
+    <div class="home" id="homePage">
+        <nav>
+            <img onclick="openLink()"  class="logo" src="./logo/vaichus black.png" alt="">
+            <a href="#services">Services</a>
+            <a href="#footer">Contact</a>
+            <button onclick="scrollToServiceSection()">Get in touch</button>
+        </nav>
+
+    <div class="img_cont img_cont7"><img src="./My portfolio - Copy/3.1 v.jpg" alt=""></div>
+    <div class="img_cont img_cont8"><img src="./My portfolio - Copy/3.2 v.jpg" alt=""></div>
+    <div class="img_cont img_cont9"><img src="./My portfolio - Copy/3.3 v.jpg" alt=""></div>
+    <div class="img_cont img_cont10"><img src="./My portfolio - Copy/3.4 v.jpg" alt=""></div>
+    <div class="img_cont img_cont11"><img src="./My portfolio - Copy/3.5 v.jpg" alt=""></div>
+    <div class="img_cont img_cont12"><img src="./My portfolio - Copy/3.6 v.jpg" alt=""></div>
+    </div>
+
+
+    <button class="main-button"></button>
+    <div class="dropdown">
+        <button class="dropdown-button dbtn1" onclick="navigateToPhoneDialer()" ></button>
+        <button class="dropdown-button dbtn2" onclick="navigateToWhatsapp()" ></button>
+        <button class="dropdown-button dbtn3" onclick="navigateToEmail()"></button>
+      </div>
+
+
+    <footer id="footer">
+        <div class="footer">
+            <div class="contact">
+                <h3>Contact us</h3>
+                <span>+91 9605081886</span>
+                <div class="icons">
+                    <img src="./icon/viber.svg" alt="">
+                   <img src="./icon/whatsapp.svg" alt="">
+                   <img src="./icon/apple.svg" alt="">
+                </div>
+            </div>
+            <div class="about">
+                <h3>About</h3>
+                <span>At Vaichus Design agency, our skilled team of designers and developers creates impactful digital experiences with innovative designs for websites, logos, and advertisements.</span>
+            </div>
+        </div>
+        <hr>
+        <div class="co-rts">
+            <img src="./logo/vaichus vb.svg" >
+            <span>copyright &copy; vaichus</span>
+        </div>
+    </footer>
+    <script>
+        function openLink() {
+      console.log("working");
+     
+      var url = "index.html";
+      window.location.href = url;
+  }
+  function scrollToServiceSection() {
+      const footerSection = document.getElementById('footer');
+      if (footerSection) {
+          footerSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+  }
+
+  
+function navigateToPhoneDialer() {
+    window.location.href = 'tel:+919605081886'; 
+}
+function navigateToWhatsapp() {
+    
+    window.location.href = 'https://wa.me/+919605081886';
+  }
+
+  function navigateToEmail() {
+    window.location.href = 'mailto:vaichusdesigns@gmail.com?subject=Enquiry%20Default';
+}
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const mainButton = document.querySelector('.main-button');
+  
+    mainButton.classList.add('active'); 
+  
+    mainButton.addEventListener('click', function() {
+      this.classList.toggle('active');
+    });
+  
+    window.addEventListener('scroll', function() {
+      const mainButton = document.querySelector('.main-button');
+      mainButton.classList.remove('active');
+    });
+  });
+  
+  </script>
+</body>
+</html>

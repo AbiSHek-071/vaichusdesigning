@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaichus | You Dream, We Design</title>
+    <link rel="icon" href="./logo/v blue.png" type="image/png" sizes="16x16">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobile.css">
+</head>
+<body>
+    
+    <main>
+        <div class="container"> 
+            <div class="home" id="homePage">
+                <nav id="nav">
+                    <img onclick="openLink()"  class="logo" src="./logo/vaichus black.png" alt="">
+                    <a href="#services">Services</a>
+                    <a href="#footer">Contact</a>
+                    <button onclick="scrollToServiceSection()">Get in touch</button>
+                </nav>
+
+
+                <div id="home" class="tagLine">
+                    <div class="tag">
+                        <h2 id="heading">Design a Better Tommorrow <br>
+                            With Us</h2>
+                        <p>All type of Graphic Design and Web design <br>
+                                 Services available</p>
+                         <button onclick="scrollToServiceSection()" >Get in touch</button>
+                    </div>
+                    <img src="./image/Main pic.jpg" alt="">
+                </div>
+
+
+                <div id="services" class="services">
+                    <h3>Our Services</h3>
+                    <div class="servs">
+                        <div class="serv-box box-1">
+                            <div class="overlay">
+                            <h4>Web Designing</h4>
+                            <span>UI/UX</span>
+                        </div>
+                        </div>
+                        <div class="serv-box box-2">
+                            <div class="overlay">
+                            <h4>Logo Designing</h4>
+                            </div>
+                        </div>
+                        <div class="serv-box box-3">
+                            <div class="overlay">
+                            <h4>All type of Graphical <br>
+                            Ad creation</h4>
+                        </div>
+                        </div>
+                    </div>
+                    <a href="service.html">View more</a>
+                </div>
+
+
+
+
+                <div class="talk">
+                    <h3>We are a team of professional designers and developers</h3>
+                    <div class="talk-box">
+                        <div class="content">
+                            <h3>Let's Talk</h3>
+                            <p>Have a project idea in mind. <br>
+                            Get a free consultation.</p>
+                            <h4>Vaishnav C K </h4>
+                            <span>Chief executive officer</span>
+                            <button class="portfolio"> My Portfolio</button>
+                        </div>
+                       <img src="./icon/v white.png" alt="">
+                        <div class="image"></div>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+
+
+            <button class="main-button"></button>
+        <div class="dropdown">
+            <button class="dropdown-button dbtn1" onclick="navigateToPhoneDialer()" ></button>
+            <button class="dropdown-button dbtn2" onclick="navigateToWhatsapp()" ></button>
+            <button class="dropdown-button dbtn3" onclick="navigateToEmail()"></button>
+          </div>
+
+
+
+
+
+        </div>
+    </main>
+    <footer id="footer">
+        <div class="footer">
+            <div class="contact">
+                <h3>Contact us</h3>
+                <span>+91 9605081886</span>
+                <div class="icons">
+                    <img onclick="navigateToPhoneDialer()" src="./icon/viber.svg" alt="">
+                   <img onclick="navigateToWhatsapp()" src="./icon/whatsapp.svg" alt="">
+                   <img onclick="navigateToEmail()" src="./icon/apple.svg" alt="">
+                </div>
+            </div>
+            <div class="about">
+                <h3>About</h3>
+                <span>At Vaichus Design agency, our skilled team of designers and developers creates impactful digital experiences with innovative designs for websites, logos, and advertisements.</span>
+            </div>
+        </div>
+        <hr>
+        <div class="co-rts">
+            <img onclick="gobackhome()" src="./logo/vaichus vb.svg" >
+            <span>copyright &copy; vaichus</span>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

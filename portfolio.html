@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaichus | Portfolio</title>
+    <link rel="icon" href="./logo/v blue.png" type="image/png" sizes="16x16">
+    <link rel="stylesheet" href="porstyle.css">
+    <link rel="stylesheet" href="mobile.css">
+
+</head>
+<body>
+    <div class="home" id="homePage">
+        <nav id="nav">
+            <img onclick="openLink()"  class="logo" src="./logo/vaichus black.png" alt="">
+           
+            <a href="#footer">Contact</a>
+            <button onclick="scrollToServiceSection()">Get in touch</button>
+        </nav>
+
+
+        
+
+    <div class="img_cont img_cont1"><img src="./My portfolio - Copy/1.1 v.jpg" alt=""></div>
+    <div class="img_cont img_cont2"><img src="./My portfolio - Copy/1.2 v.jpg" alt=""></div>
+    <div class="img_cont img_cont3"><img src="./My portfolio - Copy/2.1 v.jpg" alt=""></div>
+    <div class="img_cont img_cont4"><img src="./My portfolio - Copy/2.12 v.jpg" alt=""></div>
+    <div class="img_cont img_cont5"><img src="./My portfolio - Copy/2.21  v.jpg"></div>
+    <div class="img_cont img_cont6"><img src="./My portfolio - Copy/2.22 v.jpg" alt=""></div>
+    <div class="img_cont img_cont7"><img src="./My portfolio - Copy/3.1 v.jpg" alt=""></div>
+    <div class="img_cont img_cont8"><img src="./My portfolio - Copy/3.2 v.jpg" alt=""></div>
+    <div class="img_cont img_cont9"><img src="./My portfolio - Copy/3.3 v.jpg" alt=""></div>
+    <div class="img_cont img_cont10"><img src="./My portfolio - Copy/3.4 v.jpg" alt=""></div>
+    <div class="img_cont img_cont11"><img src="./My portfolio - Copy/3.5 v.jpg" alt=""></div>
+    <div class="img_cont img_cont12"><img src="./My portfolio - Copy/3.6 v.jpg" alt=""></div>
+    <div class="img_cont img_cont13"><img src="./My portfolio - Copy/4.1 v.jpg" alt=""></div>
+    <div class="img_cont img_cont14"><img src="./My portfolio - Copy/4.2 v.jpg" alt=""></div>
+    <div class="img_cont img_cont15"><img src="./My portfolio - Copy/4.3 v.jpg" alt=""></div>
+    <div class="img_cont img_cont16"><img src="./My portfolio - Copy/4.4 v.jpg" alt=""></div>
+    <div class="img_cont img_cont17"><img src="./My portfolio - Copy/4.5 v.jpg" alt=""></div>
+    <div class="img_cont img_cont18"><img src="./My portfolio - Copy/4.6 v.jpg" alt=""></div>
+    <div class="img_cont img_cont19"><img src="./My portfolio - Copy/4.7 v.jpg" alt=""></div>
+    </div>
+
+    <footer id="footer">
+        <div class="footer">
+            <div class="contact">
+                <h3>Contact us</h3>
+                <span>+91 9605081886</span>
+                <div class="icons">
+                    <img src="./icon/viber.svg" alt="">
+                   <img src="./icon/whatsapp.svg" alt="">
+                   <img src="./icon/apple.svg" alt="">
+                </div>
+            </div>
+            <div class="about">
+                <h3>About</h3>
+                <span>At Vaichus Design agency, our skilled team of designers and developers creates impactful digital experiences with innovative designs for websites, logos, and advertisements.</span>
+            </div>
+        </div>
+        <hr>
+        <div class="co-rts">
+            <img  onclick="gobackhome()" src="./logo/vaichus vb.svg" >
+            <span>copyright &copy; vaichus</span>
+        </div>
+    </footer>
+    <script>
+        function openLink() {
+    console.log("working");
+   
+    var url = "index.html";
+    window.location.href = url;
+}
+
+function scrollToServiceSection() {
+    const footerSection = document.getElementById('footer');
+    if (footerSection) {
+        footerSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+}
+function gobackhome() {
+    const headersection = document.getElementById('nav');
+    if (headersection) {
+        headersection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+}
+    </script>
+</body>
+</html>
